@@ -1,0 +1,33 @@
+<%- include("header")%>
+    <!--  -->
+    <%- include("nav")%>
+
+        <!--  -->
+
+<div id="div">
+
+    <h1>This is Update</h1>
+
+    <form action="/update/<%= user._id%>" method="POST">
+
+<input value="<%= user.amount%>" type="number" name="amount" placeholder="Enter Amount" />
+<br><br>
+<input value="<%= user.remark%>" type="text" name="remark" placeholder="Remark" />
+<br><br>
+<input value="<%= user.category%>" type="text" name="category" placeholder="Category" />
+<br><br>
+<select value="<%= user.paymentmode%>" name="paymentmode">
+    <option value="cash">Cash</option>
+    <option value="online">Online</option>
+    <option value="cheque">Cheque</option>
+</select>
+<br><br>
+        <button>Update</button>
+
+    </form>
+
+
+</div>
+
+        <!--  -->
+        <%- include("footer")%>

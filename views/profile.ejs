@@ -1,0 +1,58 @@
+<%- include("header.ejs")%>
+<!--  -->
+<%- include("nav.ejs")%>
+<!--  -->
+<div id="profile">
+<div id="div">
+    <h1 id="exp">Expense Tracker</h1>
+    <br>
+    <!-- <h1>👋🏼<%= admin.username%></h1>
+    <hr><br> -->
+    <a href="/createexpense">Add New Expense</a>
+   <br><br>
+    <div class="expense"><h2>Sum: <%= expenses.reduce((ac,cv) => ac+cv.amount, 0)%></h2></div>
+    <br>
+    <div class="show">
+        <% expenses.forEach((e)=>{%>
+            <div class="cards">
+                Amount - <%= e.amount%>
+                <br>
+                Remark - <%= e.remark%>
+                <br>
+                Category - <%= e.category%>
+                <br>
+                Payment - <%= e.paymentmode%>
+                <br><br>
+                <a href="/delete/<%= e._id%>">Delete</a>
+                &nbsp;
+                <a href="/update/<%= e._id%>">Update</a>
+            </div>
+            <br>
+            <hr>
+        <%})%>
+    </div>
+    <br>
+    <form id="add" action="/filter">
+        <br>
+        <select name="key" id="">
+            <option value="amount">Amount</option>
+            <br><br>
+            <option value="remark">Remark</option>
+            <br><br>
+            <option value="category">Category</option>
+            <br><br>
+            <option value="paymentmode">Payment Mode</option>
+            <br><br>
+            <option value="Date">Date</option>
+        </select>
+        <br><br>
+        <input type="text" name="value" placeholder="enter search term" />
+        <br><br>
+        <button>Filter</button>
+        <br><br>
+    </form>
+    <hr>
+</div>
+</div>
+<!--  -->
+<%- include("footer.ejs")%>

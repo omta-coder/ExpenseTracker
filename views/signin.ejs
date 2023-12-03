@@ -1,0 +1,17 @@
+<%- include("header.ejs")%>
+<%- include("nav.ejs")%>
+
+
+<div id="div">
+    <form action="/signin" method="POST">
+        <input type="text" name="username" placeholder="username" />
+        <br><br>
+        <input type="password" name="password" placeholder="password" />
+        <br><br>
+        <button>Signin</button>
+        &nbsp;&nbsp;
+        <a href="/forget">Forget Password</a>
+    </form>
+</div>
+
+<%- include("footer.ejs")%>

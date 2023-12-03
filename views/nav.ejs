@@ -1,0 +1,22 @@
+<nav>
+   <ul>
+
+    <% if(!admin){ %>
+        <!--  -->
+        <li><a href="/">Home</a></li>
+        &nbsp;&nbsp;&nbsp;
+        <li><a href="/signup">SignUp</a></li>
+        &nbsp;&nbsp;&nbsp;
+        <!--  -->
+        <% } else { %>
+        <!--  -->
+        <li><a href="/profile">Home</a></li>
+        &nbsp;&nbsp;&nbsp
+        <li><a href="/reset">Reset Password</a></li>
+        &nbsp;&nbsp;&nbsp;
+        <li><a href="/signout">Signout</a></li>
+        <!--  -->
+        <% } %>
+
+   </ul>
+</nav>

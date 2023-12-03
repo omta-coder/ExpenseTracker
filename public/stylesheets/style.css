@@ -1,0 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: gilroy;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  position: relative;
+  background-color: #dadada;
+}
+nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+  padding: 1rem;
+  padding-right: 2vmax;
+}
+nav ul li a{
+  text-decoration: none;
+  color: blue;
+  font-size: 1.3rem;
+}
+#div{
+  position: absolute;
+  top: 22%;
+  left: 38%;
+  border: .1rem solid #333;
+  padding: 2rem;
+  text-align: center;
+}
+#h1{
+  position: absolute;
+  top: 22%;
+  left: 38%;
+}
+#h1 h1{
+  text-align: center;
+  font-size: 2rem;
+}
+#div input{
+  padding: .5rem;
+  font-size: 1.2rem;
+  outline: none;
+}
+#div select{
+  padding: .5rem;
+  padding-right: 8rem;
+  font-size: 1.2rem;
+  outline: none;
+  cursor: pointer;
+}
+#div button{
+  padding: .5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+#div a{
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: blue;
+}
+#profile{
+  position: absolute;
+  top: 14%;
+  left: 38%;
+}
+#add select{
+  padding: .5rem;
+  padding-right: 4rem;
+  cursor: pointer;
+}
+#add button{
+  padding: .5rem 2rem;
+  letter-spacing: 1px;
+}
+#exp{
+  font-size: 1.9rem;
+  background: linear-gradient(to right,red,green,blue);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+

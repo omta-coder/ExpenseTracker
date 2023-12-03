@@ -1,0 +1,15 @@
+<%- include("header.ejs")%>
+<%- include("nav.ejs")%>
+
+<div id="div">
+  
+<form action="/reset" method="POST">
+    <input type="password" name="oldpassword" placeholder="oldpassword" />
+    <br><br>
+    <input type="password" name="newpassword" placeholder="newpassword" />
+    <br><br>
+    <button>Reset Password</button>
+</form>
+
+</div>
+<%- include("footer.ejs")%>
