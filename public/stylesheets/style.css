@@ -28,9 +28,11 @@ nav ul li a{
 }
 #div{
   position: absolute;
-  top: 22%;
+  top: 20%;
   left: 38%;
-  border: .1rem solid #333;
+  border: .1rem solid #cccacacb;
+  border-radius: 10px;
+  box-shadow: 0 0 5px 5px  rgba(129, 125, 125, 0.281);
   padding: 2rem;
   text-align: center;
 }
@@ -67,7 +69,7 @@ nav ul li a{
 }
 #profile{
   position: absolute;
-  top: 14%;
+  top: 12%;
   left: 38%;
 }
 #add select{
